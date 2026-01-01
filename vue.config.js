@@ -16,8 +16,8 @@ module.exports = {
 
 // vue.config.js
 module.exports = {
+  lintOnSave: false,
   transpileDependencies: ['vuetify'],
-  lintOnSave: false,//yjsohn
   chainWebpack: config => {
     config.plugin('html').tap(args => {
       args[0].title = 'Board'
